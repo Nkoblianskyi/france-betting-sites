@@ -61,7 +61,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                 <div className="mt-8">
                   <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6">
                     <div className="flex items-center gap-2 text-black px-3 py-2">
-                      <Image src="/france-flag-icon.webp" alt="Logo" width={20} height={20} className="w-5 h-5" />
+                      <Image src="/flag.png" alt="Logo" width={20} height={20} className="w-5 h-5" />
                       <span className="text-sm font-bold tech-subheading">Réglementé FR</span>
                     </div>
                     <div className="flex items-center gap-2 text-black px-3 py-2">
