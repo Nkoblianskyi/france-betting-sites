@@ -133,7 +133,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                           <Star
                             key={i}
                             className={`${isCenter ? "w-2 sm:w-3 md:w-4 h-2 sm:h-3 md:h-4" : "w-1.5 sm:w-2.5 md:w-3 h-1.5 sm:h-2.5 md:h-3"} fill-current`}
-                            style={{ color: "#C8102E" }}
+                            style={{ color: "text-blue-600" }}
                           />
                         ))}
                       </div>

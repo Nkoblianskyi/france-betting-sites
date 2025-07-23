@@ -18,20 +18,20 @@ export function OurFavoriteSection() {
       <div className="text-center mb-8">
         <div className="bg-tech-white/95 backdrop-blur-sm rounded-lg p-6 shadow-tech-strong border-2 border-tech-gold relative">
           {/* Corner accents */}
-          <div className="absolute -top-1 -left-1 w-3 h-3" style={{ backgroundColor: "#C8102E" }}></div>
-          <div className="absolute -top-1 -right-1 w-3 h-3" style={{ backgroundColor: "#C8102E" }}></div>
+          <div className="absolute -top-1 -left-1 w-3 h-3 bg-blue-600"></div>
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-600"></div>
           <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-gold"></div>
           <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-tech-gold"></div>
 
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Award className="w-6 h-6" style={{ color: "#C8102E" }} />
+            <Award className="w-6 h-6 text-blue-600" />
             <h2 className="text-2xl lg:text-3xl font-bold text-tech-black tech-heading">
-              VORES <span style={{ color: "#C8102E" }}>FAVORIT</span>
+              NOTRE <span className="text-blue-600">FAVORI</span>
             </h2>
-            <Award className="w-6 h-6" style={{ color: "#C8102E" }} />
+            <Award className="w-6 h-6 text-blue-600" />
           </div>
           <p className="text-tech-gray-700 tech-body">
-            Redaktørens anbefaling baseret på omfattende analyse og brugeroplevelse
+            Recommandation de l'éditeur basée sur une analyse approfondie et l'expérience utilisateur
           </p>
         </div>
       </div>
@@ -50,8 +50,8 @@ export function OurFavoriteSection() {
                   className="w-36 xl:w-44 h-16 xl:h-20 object-contain"
                 />
                 {/* Tech corner accents - flags with #C8102E background */}
-                <div className="absolute -top-1 -left-1 w-2 h-2" style={{ backgroundColor: "#C8102E" }}></div>
-                <div className="absolute -top-1 -right-1 w-2 h-2" style={{ backgroundColor: "#C8102E" }}></div>
+                <div className="absolute -top-1 -left-1 w-2 h-2 bg-blue-600"></div>
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-600"></div>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ export function OurFavoriteSection() {
 
             {/* WELCOME PACKAGE - 25% */}
             <div className="flex-[0_0_25%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">VELKOMSTBONUS</div>
+              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS BIENVENUE</div>
               <div className="text-lg xl:text-xl font-bold text-tech-black mb-1 tech-heading">{favoriteSite.bonus}</div>
               <div className="text-lg xl:text-xl font-bold text-tech-black tech-heading">
                 {favoriteSite.welcomeOffer}
@@ -79,10 +79,7 @@ export function OurFavoriteSection() {
 
             {/* RATING - 12% */}
             <div className="flex-[0_0_12%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div
-                className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading"
-                style={{ color: "#C8102E" }}
-              >
+              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-blue-600">
                 {favoriteSite.rating.toFixed(1)}
               </div>
               <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -91,24 +88,24 @@ export function OurFavoriteSection() {
             {/* USER SCORE - 20% */}
             <div className="flex-[0_0_20%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-tech-gray-600 mb-2 tech-subheading">
-                ({formatVotes(favoriteSite.votes)} ANMELDELSER)
+                ({formatVotes(favoriteSite.votes)} AVIS)
               </div>
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current" style={{ color: "#C8102E" }} />
+                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-blue-600" />
                 ))}
               </div>
-              <div className="text-sm text-tech-black font-bold tech-subheading">FREMRAGENDE</div>
+              <div className="text-sm text-tech-black font-bold tech-subheading">EXCELLENT</div>
             </div>
 
             {/* ACCESS - 13% */}
             <div className="flex-[0_0_13%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
               <div className="w-full">
                 <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
-                  FÅ BONUS
+                  OBTENIR BONUS
                 </Button>
                 <div className="text-xs text-tech-gray-600 font-bold tech-subheading">
-                  BESØG {favoriteSite.name.toUpperCase()}
+                  VISITER {favoriteSite.name.toUpperCase()}
                 </div>
               </div>
             </div>
@@ -118,14 +115,14 @@ export function OurFavoriteSection() {
         {/* Footer Disclaimer */}
         <div className="px-6 pb-4 border-t border-neutral-200 bg-neutral-50">
           <p className="text-xs text-neutral-500 text-center py-2">
-            18+ | Sikker spil |{" "}
+            18+ | Jeu sécurisé |{" "}
             <a
-              href="https://spillemyndigheden.dk/"
+              href="https://www.arjel.fr/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-600 hover:text-brand-700 underline"
             >
-              spillemyndigheden.dk
+              arjel.fr
             </a>
           </p>
         </div>
@@ -134,8 +131,25 @@ export function OurFavoriteSection() {
       {/* Favorite Site Card - Tablet */}
       <div className="hidden md:block lg:hidden tech-card border-2 border-tech-gold tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
         <Link href={favoriteSite.link} target="_blank" rel="noopener noreferrer" className="block">
-          <div className="pt-6 pb-4 pl-8 pr-4 bg-tech-white relative">
-            <div className="grid grid-cols-12 gap-2 items-center relative z-10">
+          <div className="pt-6 pb-4 px-4 bg-tech-white relative">
+            {/* Badges positioned outside of padded content area */}
+            <div className="absolute top-0 left-0 flex gap-0 z-30" style={{ marginLeft: "0px", paddingLeft: "0px" }}>
+              <div
+                className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
+                style={{ backgroundColor: "#DC143C" }}
+              >
+                #1
+              </div>
+              <div
+                className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
+                style={{ backgroundColor: "#DC143C" }}
+              >
+                TOP BOOKMAKER
+              </div>
+            </div>
+
+            {/* Content with left padding to avoid badge overlap */}
+            <div className="grid grid-cols-12 gap-2 items-center relative z-10 pl-4">
               {/* Logo - 3 колонки */}
               <div className="col-span-3 flex justify-center">
                 <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
@@ -144,37 +158,23 @@ export function OurFavoriteSection() {
                     alt={favoriteSite.name}
                     className="w-full h-12 object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1" style={{ backgroundColor: "#C8102E" }}></div>
-                  <div className="absolute -top-1 -right-1 w-1 h-1" style={{ backgroundColor: "#C8102E" }}></div>
-                </div>
-              </div>
-
-              {/* Badges */}
-              <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div
-                  className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
-                  style={{ backgroundColor: "#DC143C" }}
-                >
-                  #1
-                </div>
-                <div
-                  className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#DC143C" }}
-                >
-                  TOP BOOKMAKER
+                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-blue-600"></div>
+                  <div className="absolute -top-1 -right-1 w-1 h-1 bg-red-600"></div>
                 </div>
               </div>
 
               {/* Bonus - 3 колонки */}
               <div className="col-span-3 text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
+                  BONUS BIENVENUE
+                </div>
                 <div className="text-sm font-bold text-tech-black mb-1 tech-heading">{favoriteSite.bonus}</div>
                 <div className="text-sm font-bold text-tech-black tech-heading">{favoriteSite.welcomeOffer}</div>
               </div>
 
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xl font-bold leading-none tech-heading" style={{ color: "#C8102E" }}>
+                <div className="text-xl font-bold leading-none tech-heading text-blue-600">
                   {favoriteSite.rating.toFixed(1)}
                 </div>
                 <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -187,7 +187,7 @@ export function OurFavoriteSection() {
                 </div>
                 <div className="flex justify-center gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-current" style={{ color: "#C8102E" }} />
+                    <Star key={i} className="w-3 h-3 fill-current text-blue-600" />
                   ))}
                 </div>
               </div>
@@ -195,7 +195,7 @@ export function OurFavoriteSection() {
               {/* Button - 2 колонки */}
               <div className="col-span-2 text-center">
                 <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
-                  FÅ BONUS
+                  OBTENIR BONUS
                 </Button>
               </div>
             </div>
@@ -205,14 +205,14 @@ export function OurFavoriteSection() {
         {/* Footer Disclaimer */}
         <div className="px-4 pb-4 border-t border-neutral-200 bg-neutral-50 pl-8 pr-4">
           <p className="text-xs text-neutral-500 text-center py-2">
-            18+ | Sikker spil |{" "}
+            18+ | Jeu sécurisé |{" "}
             <a
-              href="https://spillemyndigheden.dk/"
+              href="https://www.arjel.fr/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-600 hover:text-brand-700 underline"
             >
-              spillemyndigheden.dk
+              arjel.fr
             </a>
           </p>
         </div>
@@ -249,14 +249,16 @@ export function OurFavoriteSection() {
                     alt={favoriteSite.name}
                     className="h-16 w-auto object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1" style={{ backgroundColor: "#C8102E" }}></div>
-                  <div className="absolute -bottom-1 -right-1 w-1 h-1" style={{ backgroundColor: "#C8102E" }}></div>
+                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-blue-600"></div>
+                  <div className="absolute -bottom-1 -right-1 w-1 h-1 bg-red-600"></div>
                 </div>
               </div>
 
               {/* Bonus Column */}
               <div className="text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
+                  BONUS BIENVENUE
+                </div>
                 <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">
                   {favoriteSite.bonus}
                 </div>
@@ -268,7 +270,7 @@ export function OurFavoriteSection() {
               {/* Button Column */}
               <div className="flex justify-center">
                 <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
-                  FÅ BONUS
+                  OBTENIR BONUS
                 </Button>
               </div>
             </div>
@@ -276,7 +278,7 @@ export function OurFavoriteSection() {
             {/* Rating Row */}
             <div className="grid grid-cols-2 gap-2 mt-3 pt-2 border-t-2 border-tech-gray-200 relative z-10">
               <div className="text-center">
-                <div className="text-lg font-bold leading-none mb-1 tech-heading" style={{ color: "#C8102E" }}>
+                <div className="text-lg font-bold leading-none mb-1 tech-heading text-blue-600">
                   {favoriteSite.rating.toFixed(1)}
                 </div>
                 <div className="text-xs text-tech-gray-600 font-bold tech-subheading">SCORE</div>
@@ -284,7 +286,7 @@ export function OurFavoriteSection() {
               <div className="text-center">
                 <div className="flex justify-center gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-2.5 h-2.5 fill-current" style={{ color: "#C8102E" }} />
+                    <Star key={i} className="w-2.5 h-2.5 fill-current text-blue-600" />
                   ))}
                 </div>
                 <div className="text-xs text-tech-gray-600 font-bold tech-subheading">
