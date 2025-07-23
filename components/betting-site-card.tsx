@@ -49,7 +49,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
       >
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Main Content */}
-          <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
+          <div className="h-40 flex items-center py-6 px-6 pr-12 bg-tech-white relative">
             {/* PLATFORM - 30% */}
             <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
               <div className="bg-tech-white border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
@@ -106,8 +106,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* ACCESS - 13% */}
-            <div className="flex-[0_0_13%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
-              <div className="w-full">
+            <div className="flex-[0_0_13%] pl-4 text-center flex flex-col justify-center items-center h-full relative z-10">
+              <div className="w-full pr-2">
                 <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
                   OBTENIR BONUS
                 </Button>

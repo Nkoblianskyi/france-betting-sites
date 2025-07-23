@@ -52,7 +52,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
             <div className="bg-tech-gold text-tech-black font-bold py-2 sm:py-3 px-4 sm:px-8 relative border-2 border-tech-black shadow-tech-strong">
               <div className="flex items-center gap-2 justify-center">
                 <Award className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-lg font-black tracking-wide tech-heading">REDAKTØRENS VALG</span>
+                <span className="text-sm sm:text-lg font-black tracking-wide tech-heading">CHOIX DE L'ÉDITEUR</span>
                 <Award className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               {/* Corner accents */}
@@ -111,7 +111,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                     {/* Bonus Amount */}
                     <div className="flex-1 sm:flex-none text-center">
                       <div className="text-xs sm:text-sm text-tech-gray-600 font-medium mb-0 sm:mb-1 tech-subheading">
-                        VELKOMSTBONUS
+                        BONUS DE BIENVENUE
                       </div>
                       <div
                         className={`${isCenter ? "text-base sm:text-xl md:text-2xl" : "text-sm sm:text-lg md:text-xl"} font-black text-tech-black tracking-wider leading-tight tech-heading`}
@@ -133,7 +133,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                           <Star
                             key={i}
                             className={`${isCenter ? "w-2 sm:w-3 md:w-4 h-2 sm:h-3 md:h-4" : "w-1.5 sm:w-2.5 md:w-3 h-1.5 sm:h-2.5 md:h-3"} fill-current`}
-                            style={{ color: "text-blue-600" }}
+                            style={{ color: "#C8102E" }}
                           />
                         ))}
                       </div>
@@ -156,7 +156,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                           } shadow-tech-medium transition-all duration-300 hover:scale-105 whitespace-nowrap tech-subheading`}
                           onClick={() => setIsOpen(false)}
                         >
-                          FÅ BONUS
+                          RÉCLAMER BONUS
                         </Button>
                       </Link>
                     </div>
