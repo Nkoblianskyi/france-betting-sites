@@ -34,7 +34,7 @@ export function MainSiteHeader() {
             <Link href="/" className="flex items-center gap-4 group">
               <div className="relative">
                 <div className="w-12 h-12 bg-tech-gold border-2 border-tech-black flex items-center justify-center tech-scanner">
-                  <Image src="/france-flag-icon.webp" alt="Logo" width={24} height={24} className="w-8 h-8" />
+                  <Image src="/logo.png" alt="Logo" width={24} height={24} className="w-8 h-8" />
                 </div>
                 <div className="absolute -top-1 -right-1 w-3 h-3 border border-tech-black bg-blue-600"></div>
                 <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-white border border-tech-black"></div>
