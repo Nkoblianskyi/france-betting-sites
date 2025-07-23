@@ -48,7 +48,7 @@ export function CookieConsentBanner() {
             <div className="flex items-start gap-3 flex-1">
               <div className="flex-shrink-0 mt-1"></div>
               <div className="flex-1">
-                <h3 className="font-bold text-gray-900 mb-1">Nous utilisons des cookies</h3>
+                <h3 className="font-bold text-gray-900 mb-1">Nous utilisons des cookies!</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Nous utilisons des cookies pour améliorer votre expérience sur notre site et pour vous montrer des
                   publicités pertinentes. En continuant à naviguer, vous acceptez notre utilisation des cookies.{" "}
