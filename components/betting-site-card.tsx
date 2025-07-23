@@ -94,8 +94,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
             </div>
 
-            {/* USER SCORE - 18% */}
-            <div className="flex-[0_0_18%] px-2 text-center flex flex-col justify-center h-full relative z-10">
+            {/* USER SCORE - 20% */}
+            <div className="flex-[0_0_20%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-tech-gray-600 mb-2 tech-subheading">({formatVotes(site.votes)} AVIS)</div>
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -105,8 +105,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="text-sm text-tech-black font-bold tech-subheading">EXCELLENT</div>
             </div>
 
-            {/* ACCESS - 15% */}
-            <div className="flex-[0_0_15%] pl-2 pr-4 text-center flex flex-col justify-center items-center h-full relative z-10">
+            {/* ACCESS - 13% */}
+            <div className="flex-[0_0_13%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
               <div className="w-full">
                 <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
                   OBTENIR BONUS
@@ -138,27 +138,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
       {/* Tablet Layout */}
       <div className="hidden md:block lg:hidden tech-card border border-tech-gray-300 relative overflow-hidden cursor-pointer mb-2 mx-4">
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
-          <div className="pt-6 pb-4 px-4 bg-tech-white relative">
-            {/* Badges positioned outside of padded content area */}
-            <div className="absolute top-0 left-0 flex gap-0 z-30" style={{ marginLeft: "0px", paddingLeft: "0px" }}>
-              <div
-                className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
-                style={{ backgroundColor: "#DC143C" }}
-              >
-                #{rank}
-              </div>
-              {rank <= 4 && (
-                <div
-                  className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#DC143C" }}
-                >
-                  {getRankLabel(rank)}
-                </div>
-              )}
-            </div>
-
-            {/* Content with left padding only for top 4 ranks to avoid badge overlap */}
-            <div className={`grid grid-cols-12 gap-2 items-center relative z-10 ${rank <= 4 ? "pl-4" : ""}`}>
+          <div className={`pt-6 pb-4 ${rank <= 4 ? "pl-8 pr-4" : "px-4"} bg-tech-white relative`}>
+            <div className="grid grid-cols-12 gap-2 items-center relative z-10">
               {/* Logo - 3 колонки */}
               <div className="col-span-3 flex justify-center">
                 <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
@@ -166,6 +147,24 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
                   <div className="absolute -top-1 -left-1 w-1 h-1 bg-blue-600"></div>
                   <div className="absolute -top-1 -right-1 w-1 h-1 bg-red-600"></div>
                 </div>
+              </div>
+
+              {/* Badges */}
+              <div className="absolute top-0 left-0 flex gap-0 z-30">
+                <div
+                  className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
+                  style={{ backgroundColor: "#DC143C" }}
+                >
+                  #{rank}
+                </div>
+                {rank <= 4 && (
+                  <div
+                    className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
+                    style={{ backgroundColor: "#DC143C" }}
+                  >
+                    {getRankLabel(rank)}
+                  </div>
+                )}
               </div>
 
               {/* Bonus - 3 колонки */}
@@ -202,39 +201,24 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
           </div>
         </Link>
-
-        {/* Footer Disclaimer */}
-        <div className={`px-4 pb-4 border-t border-neutral-200 bg-neutral-50 ${rank <= 4 ? "pl-8 pr-4" : "px-4"}`}>
-          <p className="text-xs text-neutral-500 text-center py-2">
-            18+ | Jeu sécurisé |{" "}
-            <a
-              href="https://www.arjel.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:text-brand-700 underline"
-            >
-              arjel.fr
-            </a>
-          </p>
-        </div>
       </div>
 
       {/* Mobile Layout */}
-      <div className="md:hidden tech-card relative overflow-hidden cursor-pointer mb-2 mx-2">
+      <div className="md:hidden tech-card  relative overflow-hidden cursor-pointer mb-1 mx-2">
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Main Content */}
-          <div className="p-3 relative bg-tech-white">
+          <div className="p-2 relative bg-tech-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
+                className="tech-rank px-3 py-0.5 text-sm font-bold !text-white"
                 style={{ backgroundColor: "#DC143C" }}
               >
                 #{rank}
               </div>
               {rank <= 4 && (
                 <div
-                  className="tech-badge px-1.5 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
+                  className="tech-badge px-3 py-1 text-xs font-bold !text-white whitespace-nowrap"
                   style={{ backgroundColor: "#DC143C" }}
                 >
                   {getRankLabel(rank)}
@@ -243,7 +227,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* Content Grid */}
-            <div className="grid grid-cols-3 gap-2 items-center mt-8 relative z-10">
+            <div className="grid grid-cols-2 gap-2 items-center mt-5 relative z-10">
               {/* Logo Column */}
               <div className="flex justify-center">
                 <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft relative">
@@ -259,34 +243,38 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
                 <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
                 <div className="text-lg font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
               </div>
+            </div>
+
+            {/* Rating Row */}
+            <div className="grid grid-cols-3 items-center justify-center gap-1 mt-1 pt-1 border-t-2 border-tech-gray-200 relative z-10">
+              <div className="text-center">
+                <div className="text-xl font-bold leading-none mb-1 mt-1.5 tech-heading text-blue-600">
+                  {site.rating.toFixed(1)}
+                </div>
+                <div className="text-[8px] text-tech-gray-600 font-bold tech-subheading">SCORE</div>
+              </div>
+              <div className="text-center">
+                <div className="flex justify-center gap-0.5 mt-2 mb-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-current text-blue-600" />
+                  ))}
+                </div>
+                <div className="text-[10px] text-tech-gray-600 font-bold tech-subheading">
+                  ({formatVotes(site.votes)})
+                </div>
+              </div>
 
               {/* Button Column */}
               <div className="flex justify-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
+                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-4 py-2 w-full font-bold tech-subheading shadow-lg text-xs">
                   OBTENIR BONUS
                 </Button>
               </div>
             </div>
-
-            {/* Rating Row */}
-            <div className="grid grid-cols-2 gap-2 mt-3 pt-2 border-t-2 border-tech-gray-200 relative z-10">
-              <div className="text-center">
-                <div className="text-lg font-bold leading-none mb-1 tech-heading text-blue-600">
-                  {site.rating.toFixed(1)}
-                </div>
-                <div className="text-xs text-tech-gray-600 font-bold tech-subheading">SCORE</div>
-              </div>
-              <div className="text-center">
-                <div className="flex justify-center gap-0.5 mb-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-2.5 h-2.5 fill-current text-blue-600" />
-                  ))}
-                </div>
-                <div className="text-xs text-tech-gray-600 font-bold tech-subheading">({formatVotes(site.votes)})</div>
-              </div>
-            </div>
           </div>
         </Link>
+
+        {/* Footer Disclaimer */}
       </div>
     </div>
   )
