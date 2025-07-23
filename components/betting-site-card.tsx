@@ -138,7 +138,21 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
       {/* Tablet Layout */}
       <div className="hidden md:block lg:hidden tech-card border border-tech-gray-300 relative overflow-hidden cursor-pointer mb-2 mx-4">
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
-          <div className={`pt-6 pb-4 ${rank <= 4 ? "pl-8 pr-4" : "px-4"} bg-tech-white relative`}>
+          {/* Badges */}
+          <div className="absolute top-0 left-0 flex gap-0 z-30">
+            <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white" style={{ backgroundColor: "#DC143C" }}>
+              #{rank}
+            </div>
+            {rank <= 4 && (
+              <div
+                className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
+                style={{ backgroundColor: "#DC143C" }}
+              >
+                {getRankLabel(rank)}
+              </div>
+            )}
+          </div>
+          <div className="pt-6 pb-4 px-4 bg-tech-white relative">
             <div className="grid grid-cols-12 gap-2 items-center relative z-10">
               {/* Logo - 3 колонки */}
               <div className="col-span-3 flex justify-center">
@@ -147,24 +161,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
                   <div className="absolute -top-1 -left-1 w-1 h-1 bg-blue-600"></div>
                   <div className="absolute -top-1 -right-1 w-1 h-1 bg-red-600"></div>
                 </div>
-              </div>
-
-              {/* Badges */}
-              <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div
-                  className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
-                  style={{ backgroundColor: "#DC143C" }}
-                >
-                  #{rank}
-                </div>
-                {rank <= 4 && (
-                  <div
-                    className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                    style={{ backgroundColor: "#DC143C" }}
-                  >
-                    {getRankLabel(rank)}
-                  </div>
-                )}
               </div>
 
               {/* Bonus - 3 колонки */}
