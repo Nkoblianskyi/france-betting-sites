@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description:
     "Découvrez les meilleurs sites de paris français avec des avis d'experts, des bonus exclusifs et des comparaisons complètes. Trouvez votre bookmaker parfait aujourd'hui.",
   keywords: "sites de paris français, bookmakers France, bonus paris, paris sportifs France",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -31,7 +30,7 @@ export default function RootLayout({
         <div
           className="min-h-screen relative"
           style={{
-            backgroundImage: "url(/stadium-background.jpg)",
+            backgroundImage: "url(/bg.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
