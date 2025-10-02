@@ -53,6 +53,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -62,9 +63,11 @@
 
 /* Hi-Tech Utility Classes */
 .tech-card {
-  @apply bg-tech-white border border-tech-gray-200 shadow-tech-medium;
   position: relative;
   overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e8eaed;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .tech-card::before {
@@ -79,13 +82,16 @@
 }
 
 .tech-card:hover {
-  @apply shadow-tech-glow;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
   transform: translateY(-2px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-button {
-  @apply bg-tech-gold text-tech-black font-bold border border-tech-black;
+  background-color: #ffd700;
+  color: #000000;
+  font-weight: 700;
+  border: 1px solid #000000;
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,24 +113,30 @@
 }
 
 .tech-button:hover {
-  @apply shadow-tech-glow;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
   transform: translateY(-1px);
 }
 
 .tech-header {
-  @apply bg-tech-black text-tech-white border-b-2 border-tech-gold;
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 2px solid #ffd700;
   background-image: linear-gradient(rgba(255, 215, 0, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 215, 0, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
 .tech-rank {
-  @apply bg-tech-red text-tech-white font-bold;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: 700;
   clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);
 }
 
 .tech-badge {
-  @apply bg-tech-gold text-tech-black font-bold;
+  background-color: #ffd700;
+  color: #000000;
+  font-weight: 700;
   clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
 }
 
@@ -182,5 +194,15 @@
 @media (max-width: 768px) {
   .tech-card::before {
     height: 1px;
+  }
+}
+
+@keyframes tech-scan {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
   }
 }

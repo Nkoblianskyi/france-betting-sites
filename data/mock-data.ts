@@ -13,7 +13,7 @@ export const bettingSites: BettingSite[] = [
     terms:
       "18+ | Nouveaux clients français uniquement | Max 100€ de bonus | Dépôt min 10€ | Cotes min 1,70 | Mise du bonus non retournée | Certains marchés/sports/méthodes de paiement exclus | Bonus à miser 5x | Bonus valide 30 jours | Conditions générales s'appliquent",
     userRating: 9.8,
-    votes: 31245,
+    votes: 3245,
     link: "https://boomerang-bet0101.com/eu/",
     backgroundImage: "/banner-3.jpg",
   },
@@ -29,7 +29,7 @@ export const bettingSites: BettingSite[] = [
     terms:
       "18+ Inscrivez-vous & déposez 10€+ et pariez sur n'importe quel marché (cotes 2,00+). Pas de cashout. Obtenez jusqu'à 500€ en bonus pour des marchés spécifiés, expiration 7 jours. Offre valide jusqu'au 31.12.25. Conditions générales s'appliquent.",
     userRating: 9.7,
-    votes: 28934,
+    votes: 2934,
     link: "https://winrolla1.com/eu/",
     backgroundImage: "/banner-10.jpg",
   },
@@ -45,7 +45,7 @@ export const bettingSites: BettingSite[] = [
     terms:
       "Pariez 10€ au total sur des paris pré-match avec cotes min 2,0 pour qualifier. Obtenez 100€ crédités comme bonus. Conditions s'appliquent. Bonus à miser 3x avant retrait.",
     userRating: 9.6,
-    votes: 27156,
+    votes: 2156,
     link: "https://richroyal1.com/eu/",
     backgroundImage: "/banner-3.jpg",
   },
@@ -61,7 +61,7 @@ export const bettingSites: BettingSite[] = [
     terms:
       "Nouveaux clients uniquement: Déposez 10€+ et placez un pari de 10€+ à cotes 2,0+ pour recevoir 100€ en bonus (valide 7 jours). Exclut certaines méthodes de paiement. France en ligne uniquement, 18+. Conditions s'appliquent.",
     userRating: 9.5,
-    votes: 25789,
+    votes: 2789,
     link: "https://billybets.com/",
     backgroundImage: "/banner-6.jpg",
   },
@@ -77,7 +77,7 @@ export const bettingSites: BettingSite[] = [
     terms:
       "Nouveaux clients uniquement. Inscrivez-vous, déposez avec Carte de Débit, et placez le premier pari 10€+ à cotes égales (2,0)+ sur Sport dans les 7 jours pour obtenir 100€ en bonus dans les 10 heures après règlement. Expiration 7 jours. Conditions s'appliquent.",
     userRating: 9.4,
-    votes: 24567,
+    votes: 2567,
     link: "https://betibet.com/",
     backgroundImage: "banner-3.jpg",
   },

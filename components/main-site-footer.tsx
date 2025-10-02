@@ -135,15 +135,13 @@ export function MainSiteFooter() {
                   alt="ANJ - Autorité Nationale des Jeux"
                   className="h-8 md:h-10 object-contain"
                 />
-                <div className="absolute -top-1 -left-1 w-2 h-2 bg-tech-gold"></div>
-                <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-blue-600"></div>
+
               </div>
             </Link>
             <Link href="https://www.joueurs-info-service.fr/" className="group">
               <div className="bg-transparent border-2 border-tech-black p-4 shadow-tech-medium group-hover:shadow-tech-glow transition-all duration-300 transform group-hover:scale-105 relative">
                 <img src="/jouers-info-service.png" alt="Joueurs Info Service" className="h-8 md:h-10 object-contain" />
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-tech-gold"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-blue-600"></div>
+
               </div>
             </Link>
             {/* <Link href="https://www.sos-joueurs.org/" className="group">
@@ -160,15 +158,13 @@ export function MainSiteFooter() {
                   alt="Médiateur des Jeux"
                   className="h-8 md:h-10 object-contain"
                 />
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-tech-gold"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-blue-600"></div>
+
               </div>
             </Link>
             <Link href="https://www.adictel.eu/" className="group">
               <div className="bg-transparent border-2 border-tech-black p-4 shadow-tech-medium group-hover:shadow-tech-glow transition-all duration-300 transform group-hover:scale-105 relative">
                 <img src="/logo-adictel.svg" alt="ADICTEL" className="h-8 md:h-10 object-contain" />
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-tech-gold"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-blue-600"></div>
+
               </div>
             </Link>
           </div>

@@ -27,18 +27,30 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <div
-          className="min-h-screen relative"
-          style={{
-            backgroundImage: "url(/bg.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-        >
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+        {/* Desktop/Tablet Background - Stadium Image */}
+        <div className="min-h-screen relative hidden md:block">
+          <div
+            className="fixed inset-0"
+            style={{
+              backgroundImage: "url(/bg.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed",
+            }}
+          >
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/40"></div>
+          </div>
 
+          <div className="relative z-10">
+            <MainSiteHeader />
+            <main>{children}</main>
+            <MainSiteFooter />
+          </div>
+        </div>
+
+        {/* Mobile Background - Black */}
+        <div className="min-h-screen relative md:hidden bg-black">
           <div className="relative z-10">
             <MainSiteHeader />
             <main>{children}</main>

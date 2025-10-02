@@ -41,6 +41,31 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
     }
   }
 
+  const renderStars = (rating: number, size = "w-4 h-4") => {
+    const value = Math.max(0, Math.min(10, rating)) / 2 // 0..5
+    const full = Math.floor(value)
+    const frac = value - full - 0.2
+
+    return Array.from({ length: 5 }, (_, i) => {
+      let fillPct = 0
+      if (i < full) fillPct = 1
+      else if (i === full) fillPct = Math.max(0, frac)
+
+      return (
+        <div key={i} className={`relative inline-block ${size}`}>
+          {/* Контур завжди */}
+          <Star className={`absolute inset-0 ${size} text-tech-gold`} fill="transparent" strokeWidth={1.75} />
+          {/* Заповнення обрізкою по ширині */}
+          {fillPct > 0 && (
+            <div className="absolute inset-0 overflow-hidden" style={{ width: `${fillPct * 100}%` }}>
+              <Star className={`${size} text-tech-gold`} fill="currentColor" strokeWidth={1.75} />
+            </div>
+          )}
+        </div>
+      )
+    })
+  }
+
   return (
     <div className="block animate-fade-in">
       {/* Desktop Layout */}
@@ -88,7 +113,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* RATING - 12% */}
             <div className="flex-[0_0_12%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-blue-600">
+              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-tech-black">
                 {site.rating.toFixed(1)}
               </div>
               <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -98,9 +123,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             <div className="flex-[0_0_20%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-tech-gray-600 mb-2 tech-subheading">({formatVotes(site.votes)} AVIS)</div>
               <div className="flex justify-center gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-blue-600" />
-                ))}
+                {renderStars(site.userRating, "w-4 xl:w-5 h-4 xl:h-5")}
               </div>
               <div className="text-sm text-tech-black font-bold tech-subheading">EXCELLENT</div>
             </div>
@@ -172,7 +195,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xl font-bold leading-none tech-heading text-blue-600">
+                <div className="text-xl font-bold leading-none tech-heading text-tech-black">
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -181,16 +204,12 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               {/* Rating - 2 колонки */}
               <div className="col-span-2 text-center">
                 <div className="text-xs text-tech-gray-600 mb-1 tech-subheading">({formatVotes(site.votes)})</div>
-                <div className="flex justify-center gap-0.5 mb-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-current text-blue-600" />
-                  ))}
-                </div>
+                <div className="flex justify-center gap-0.5 mb-1">{renderStars(site.userRating, "w-3 h-3")}</div>
               </div>
 
               {/* Button - 2 колонки */}
               <div className="col-span-2 text-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
+                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-[10px] w-full font-bold tech-subheading shadow-lg">
                   OBTENIR BONUS
                 </Button>
               </div>
@@ -244,17 +263,13 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             {/* Rating Row */}
             <div className="grid grid-cols-3 items-center justify-center gap-1 mt-1 pt-1 border-t-2 border-tech-gray-200 relative z-10">
               <div className="text-center">
-                <div className="text-xl font-bold leading-none mb-1 mt-1.5 tech-heading text-blue-600">
+                <div className="text-xl font-bold leading-none mb-1 mt-1.5 tech-heading text-tech-black">
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-[8px] text-tech-gray-600 font-bold tech-subheading">SCORE</div>
               </div>
               <div className="text-center">
-                <div className="flex justify-center gap-0.5 mt-2 mb-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current text-blue-600" />
-                  ))}
-                </div>
+                <div className="flex justify-center gap-0.5 mt-2 mb-1">{renderStars(site.userRating, "w-4 h-4")}</div>
                 <div className="text-[10px] text-tech-gray-600 font-bold tech-subheading">
                   ({formatVotes(site.votes)})
                 </div>
