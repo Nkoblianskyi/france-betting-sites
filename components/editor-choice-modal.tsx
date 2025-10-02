@@ -72,7 +72,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
 
             {/* Bonus Amount */}
             <div className="mb-6">
-              <div className="text-sm text-tech-gray-600 font-medium mb-2 tech-subheading">BONUS DE BIENVENUE</div>
+              <div className="text-sm text-tech-gray-600 font-medium mb-2 tech-subheading">Offre De Bienvenue</div>
               <div className="text-2xl font-black text-tech-black tracking-wider leading-tight tech-heading mb-1">
                 {site?.bonus}
               </div>

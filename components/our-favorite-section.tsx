@@ -190,7 +190,7 @@ export function OurFavoriteSection() {
 
               {/* Bonus */}
               <div className="col-span-3 text-center px-1">
-                <div className="text-[9px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+                <div className="text-[9px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
                 <div className="text-xs font-bold text-tech-black mb-0.5 tech-heading leading-tight">
                   {favoriteSite.bonus}
                 </div>
@@ -279,7 +279,7 @@ export function OurFavoriteSection() {
 
               {/* Bonus */}
               <div className="text-center">
-                <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+                <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
                 <div className="text-base font-bold text-tech-black leading-tight mb-1 tech-heading">
                   {favoriteSite.bonus}
                 </div>

@@ -91,9 +91,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* Rank and Status Badges - positioned absolutely */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-3 py-1 text-xs font-bold whitespace-nowrap">
-                #{rank}
-              </div>
               {rank <= 4 && (
                 <div
                   className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold whitespace-nowrap"
@@ -105,7 +102,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* WELCOME PACKAGE - 25% */}
             <div className="flex-[0_0_25%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS BIENVENUE</div>
+              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
               <div className="text-lg xl:text-xl font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
               <div className="text-lg xl:text-xl font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
             </div>
@@ -162,9 +159,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Badges */}
           <div className="absolute top-0 left-0 flex gap-0 z-30">
-            <div className="tech-rank px-2 py-0.5 text-sm font-bold whitespace-nowrap">
-              #{rank}
-            </div>
             {rank <= 4 && (
               <div
                 className="tech-badge px-2 py-0.5 text-xs font-bold whitespace-nowrap"
@@ -186,7 +180,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Bonus - 3 колонки */}
               <div className="col-span-3 text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
                 <div className="text-sm font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
                 <div className="text-sm font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
               </div>
@@ -223,12 +217,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
           <div className="p-2 relative bg-tech-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div
-                className="tech-rank px-3 py-0.5 text-sm font-bold"
-
-              >
-                #{rank}
-              </div>
               {rank <= 4 && (
                 <div
                   className="tech-badge px-3 py-1 text-xs font-bold"
@@ -251,9 +239,9 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Bonus Column */}
               <div className="text-center -mt-4 pr-1">
-                <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
-                <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
-                <div className="text-sm font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
+                <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
+                <div className="text-sm font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
+                <div className="text-xs font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
               </div>
             </div>
 
