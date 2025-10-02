@@ -54,18 +54,14 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
 
                 {/* Trust Indicators */}
                 <div className="mt-8">
-                  <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6">
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
+                  <div className="flex justify-center items-center gap-1 sm:gap-3">
+                    <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                       <Image src="/flag.png" alt="Logo" width={20} height={20} className="w-5 h-5" />
-                      <span className="text-sm font-bold tech-subheading">Réglementé FR</span>
+                      <span className="text-[10px] sm:text-xs font-bold tech-subheading">100% Légal</span>
                     </div>
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
-                      <Award className="w-4 h-4 text-black" />
-                      <span className="text-sm font-bold tech-subheading">100% Légal</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
-                      <TrendingUp className="w-4 h-4 text-black" />
-                      <span className="text-sm font-bold tech-subheading">Retraits Rapides</span>
+                    <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
+                      <Award className="w-3 h-3 text-black" />
+                      <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
                     </div>
                   </div>
                 </div>
@@ -122,7 +118,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          
+
         >
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/70"></div>
@@ -139,16 +135,12 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
             <div className="mt-2">
               <div className="flex justify-center items-center gap-1 sm:gap-3">
                 <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
-                  <Image src="/flag.png" alt="Logo" width={12} height={12} className="w-5 h-5" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Réglementé FR</span>
-                </div>
-                <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
-                  <Award className="w-3 h-3 text-white" />
+                  <Image src="/flag.png" alt="Logo" width={20} height={20} className="w-5 h-5" />
                   <span className="text-[10px] sm:text-xs font-bold tech-subheading">100% Légal</span>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
-                  <TrendingUp className="w-3 h-3 text-white" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Retraits Rapides</span>
+                  <Award className="w-3 h-3 text-white" />
+                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
                 </div>
               </div>
             </div>
