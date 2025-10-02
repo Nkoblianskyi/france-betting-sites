@@ -45,8 +45,8 @@ export function OurFavoriteSection() {
           {/* Corner accents */}
           <div className="absolute -top-1 -left-1 w-3 h-3 bg-blue-600"></div>
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-600"></div>
-          <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-gold"></div>
-          <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-tech-gold"></div>
+          <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-red-600"></div>
+          <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-red-600"></div>
 
           <div className="flex items-center justify-center gap-2 lg:gap-3 mb-2 lg:mb-3">
             <Award className="w-5 h-5 lg:w-6 lg:h-6 text-blue-600" />
@@ -83,14 +83,14 @@ export function OurFavoriteSection() {
             {/* Rank and Status Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 xl:px-3 py-1 text-xs font-bold !text-white"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-rank px-2 xl:px-3 py-1 text-xs font-bold"
+
               >
                 #1
               </div>
               <div
-                className="tech-badge px-2 xl:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-badge px-2 xl:px-4 py-1 text-xs font-bold whitespace-nowrap"
+
               >
                 TOP BOOKMAKER
               </div>
@@ -163,14 +163,12 @@ export function OurFavoriteSection() {
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 py-0.5 text-xs font-bold !text-white"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-rank px-2 py-0.5 text-xs font-bold"
               >
                 #1
               </div>
               <div
-                className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-badge px-2 py-0.5 text-xs font-bold whitespace-nowrap"
               >
                 TOP BOOKMAKER
               </div>
@@ -252,14 +250,13 @@ export function OurFavoriteSection() {
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 py-0.5 text-xs font-bold !text-white"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-rank px-2 py-0.5 text-xs font-bold"
               >
                 #1
               </div>
               <div
-                className="tech-badge px-2 py-0.5 text-[10px] font-bold !text-white whitespace-nowrap"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-badge px-2 py-0.5 text-[10px] font-bold whitespace-nowrap"
+
               >
                 TOP BOOKMAKER
               </div>

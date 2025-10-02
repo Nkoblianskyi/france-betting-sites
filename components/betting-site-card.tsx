@@ -91,13 +91,12 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* Rank and Status Badges - positioned absolutely */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-3 py-1 text-xs font-bold !text-white" style={{ backgroundColor: "#DC143C" }}>
+              <div className="tech-rank px-3 py-1 text-xs font-bold whitespace-nowrap">
                 #{rank}
               </div>
               {rank <= 4 && (
                 <div
-                  className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#DC143C" }}
+                  className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold whitespace-nowrap"
                 >
                   {getRankLabel(rank)}
                 </div>
@@ -163,13 +162,12 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Badges */}
           <div className="absolute top-0 left-0 flex gap-0 z-30">
-            <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white" style={{ backgroundColor: "#DC143C" }}>
+            <div className="tech-rank px-2 py-0.5 text-sm font-bold whitespace-nowrap">
               #{rank}
             </div>
             {rank <= 4 && (
               <div
-                className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-badge px-2 py-0.5 text-xs font-bold whitespace-nowrap"
               >
                 {getRankLabel(rank)}
               </div>
@@ -226,15 +224,14 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-3 py-0.5 text-sm font-bold !text-white"
-                style={{ backgroundColor: "#DC143C" }}
+                className="tech-rank px-3 py-0.5 text-sm font-bold"
+
               >
                 #{rank}
               </div>
               {rank <= 4 && (
                 <div
-                  className="tech-badge px-3 py-1 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#DC143C" }}
+                  className="tech-badge px-3 py-1 text-xs font-bold"
                 >
                   {getRankLabel(rank)}
                 </div>
@@ -242,7 +239,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* Content Grid */}
-            <div className="grid grid-cols-2 gap-2 items-center mt-5 relative z-10">
+            <div className="grid grid-cols-[40%_60%] gap-2 items-center mt-5 relative z-10">
               {/* Logo Column */}
               <div className="flex justify-center">
                 <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft relative">
@@ -253,10 +250,10 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               </div>
 
               {/* Bonus Column */}
-              <div className="text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
+              <div className="text-center -mt-4 pr-1">
+                <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BONUS</div>
                 <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
-                <div className="text-lg font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
+                <div className="text-sm font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
               </div>
             </div>
 

@@ -9,8 +9,8 @@ export function MainSiteHeader() {
         <div className="h-12 flex items-center justify-center px-4 relative">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-tech-gold"></div>
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-tech-gold border border-tech-black flex items-center justify-center relative">
-              <Image src="/logo.png" alt="Logo" width={30} height={30} className="w-5 h-5" />
+            <div className=" flex items-center justify-center relative">
+              <Image src="/logo.png" alt="Logo" width={48} height={48} className="w-10 h-10" />
             </div>
           </Link>
           <div className="absolute right-0 top-0 bottom-0 w-1 bg-blue-600"></div>
@@ -24,8 +24,8 @@ export function MainSiteHeader() {
             {/* Logo and Brand - Centered */}
             <Link href="/" className="flex items-center gap-4 group">
               <div className="relative">
-                <div className="w-10 h-10 bg-tech-gold border-2 border-tech-black flex items-center justify-center tech-scanner">
-                  <Image src="/logo.png" alt="Logo" width={24} height={24} className="w-8 h-8" />
+                <div className="flex items-center justify-center">
+                  <Image src="/logo.png" alt="Logo" width={48} height={48} className="w-10 h-10" />
                 </div>
               </div>
             </Link>

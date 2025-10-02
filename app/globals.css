@@ -127,17 +127,17 @@
 }
 
 .tech-rank {
-  background-color: #ff0000;
-  color: #ffffff;
-  font-weight: 700;
-  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);
+  background-color: #FFD700;
+  color: #000000;
+  font-weight: 800;
+
 }
 
 .tech-badge {
-  background-color: #ffd700;
+  background-color: #FFD700;
   color: #000000;
   font-weight: 700;
-  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+
 }
 
 .tech-glow {

@@ -97,15 +97,11 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
               <div className="flex justify-center items-center gap-1 sm:gap-3">
                 <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                   <Image src="/flag.png" alt="Logo" width={20} height={20} className="w-5 h-5" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Réglementé FR</span>
-                </div>
-                <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
-                  <Award className="w-3 h-3 text-black" />
                   <span className="text-[10px] sm:text-xs font-bold tech-subheading">100% Légal</span>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
-                  <TrendingUp className="w-3 h-3 text-black" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Retraits Rapides</span>
+                  <Award className="w-3 h-3 text-black" />
+                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
                 </div>
               </div>
             </div>
