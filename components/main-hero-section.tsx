@@ -61,7 +61,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                     </div>
                     <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                       <Award className="w-3 h-3 text-black" />
-                      <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
+                      <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus Élevés</span>
                     </div>
                     <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                       <TrendingUp className="w-3 h-3 text-black" />
@@ -101,7 +101,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                   <Award className="w-3 h-3 text-black" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
+                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus Élevés</span>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                   <TrendingUp className="w-3 h-3 text-black" />
@@ -148,7 +148,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
                   <Award className="w-3 h-3 text-white" />
-                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus élevés</span>
+                  <span className="text-[10px] sm:text-xs font-bold tech-subheading">Bonus Élevés</span>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
                   <TrendingUp className="w-3 h-3 text-white" />
