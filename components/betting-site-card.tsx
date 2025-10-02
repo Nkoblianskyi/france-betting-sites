@@ -102,9 +102,9 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* WELCOME PACKAGE - 25% */}
             <div className="flex-[0_0_25%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
+              <div className="text-[10px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
+              <div className="text-sm xl:text-lg font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
+              <div className="text-base xl:text-sm font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
             </div>
 
             {/* RATING - 12% */}
@@ -182,7 +182,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="col-span-3 text-center">
                 <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
                 <div className="text-sm font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
-                <div className="text-sm font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
+                <div className="text-base font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
               </div>
 
               {/* Score - 2 колонки */}
