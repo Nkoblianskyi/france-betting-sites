@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { CookieConsentBanner } from "./cookie-consent-banner"
 import { InformationalContent } from "./informational-content"
 import { AdvertiserDisclosurePopup } from "./advertiser-disclosure-popup"
 import { TermsConditionsPopup } from "./terms-conditions-popup"
@@ -36,7 +35,6 @@ export default function IrishBettingPage() {
       {/* Тільки одна модалка - Editor's Choice */}
       <EditorChoiceModal bettingSites={bettingSites} />
 
-      <CookieConsentBanner />
       <AdvertiserDisclosurePopup isOpen={isAdvertiserModalOpen} onClose={() => setIsAdvertiserModalOpen(false)} />
       <TermsConditionsPopup isOpen={isTermsModalOpen} onClose={() => setIsTermsModalOpen(false)} />
     </>
