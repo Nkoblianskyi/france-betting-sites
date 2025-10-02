@@ -83,12 +83,6 @@ export function OurFavoriteSection() {
             {/* Rank and Status Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 xl:px-3 py-1 text-xs font-bold"
-
-              >
-                #1
-              </div>
-              <div
                 className="tech-badge px-2 xl:px-4 py-1 text-xs font-bold whitespace-nowrap"
 
               >
@@ -99,12 +93,12 @@ export function OurFavoriteSection() {
             {/* WELCOME PACKAGE - 25% */}
             <div className="flex-[0_0_25%] px-1 xl:px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-[10px] xl:text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
-                BONUS
+                Offre De Bienvenue
               </div>
-              <div className="text-base xl:text-xl font-bold text-tech-black mb-1 tech-heading leading-tight">
+              <div className="text-lg  font-bold text-tech-black mb-1 tech-heading leading-tight">
                 {favoriteSite.bonus}
               </div>
-              <div className="text-base xl:text-xl font-bold text-tech-black tech-heading leading-tight">
+              <div className="text-xs font-bold text-tech-black tech-heading leading-tight">
                 {favoriteSite.welcomeOffer}
               </div>
             </div>
@@ -163,11 +157,6 @@ export function OurFavoriteSection() {
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 py-0.5 text-xs font-bold"
-              >
-                #1
-              </div>
-              <div
                 className="tech-badge px-2 py-0.5 text-xs font-bold whitespace-nowrap"
               >
                 TOP BOOKMAKER
@@ -191,7 +180,7 @@ export function OurFavoriteSection() {
               {/* Bonus */}
               <div className="col-span-3 text-center px-1">
                 <div className="text-[9px] text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">Offre De Bienvenue</div>
-                <div className="text-xs font-bold text-tech-black mb-0.5 tech-heading leading-tight">
+                <div className="text-base font-bold text-tech-black mb-0.5 tech-heading leading-tight">
                   {favoriteSite.bonus}
                 </div>
                 <div className="text-xs font-bold text-tech-black tech-heading leading-tight">
@@ -250,11 +239,6 @@ export function OurFavoriteSection() {
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div
-                className="tech-rank px-2 py-0.5 text-xs font-bold"
-              >
-                #1
-              </div>
-              <div
                 className="tech-badge px-2 py-0.5 text-[10px] font-bold whitespace-nowrap"
 
               >
@@ -283,7 +267,7 @@ export function OurFavoriteSection() {
                 <div className="text-base font-bold text-tech-black leading-tight mb-1 tech-heading">
                   {favoriteSite.bonus}
                 </div>
-                <div className="text-base font-bold text-tech-black leading-tight tech-heading">
+                <div className="text-xs font-bold text-tech-black leading-tight tech-heading">
                   {favoriteSite.welcomeOffer}
                 </div>
               </div>
