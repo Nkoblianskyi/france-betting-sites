@@ -47,52 +47,7 @@ export function MainSiteFooter() {
               </div>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-tech-gold tech-heading flex items-center gap-2">
-              <Target className="w-5 h-5" />
-              ACCÈS RAPIDE
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-tech-gray-300 hover:text-tech-gold transition-colors duration-300 flex items-center gap-3 tech-subheading"
-                >
-                  <div className="w-2 h-2 bg-tech-gold"></div>À PROPOS DE LA PLATEFORME
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/responsible-gaming"
-                  className="text-tech-gray-300 hover:text-blue-600 transition-colors duration-300 flex items-center gap-3 tech-subheading"
-                >
-                  <div className="w-2 h-2 bg-blue-600"></div>
-                  JEU RESPONSABLE
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/cookie-policy"
-                  className="text-tech-gray-300 hover:text-tech-gold transition-colors duration-300 flex items-center gap-3 tech-subheading"
-                >
-                  <div className="w-2 h-2 bg-tech-gold"></div>
-                  POLITIQUE DES COOKIES
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-tech-gray-300 hover:text-blue-600 transition-colors duration-300 flex items-center gap-3 tech-subheading"
-                >
-                  <div className="w-2 h-2 bg-blue-600"></div>
-                  POLITIQUE DE CONFIDENTIALITÉ
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+          
           {/* Trust & Safety */}
           <div>
             <h4 className="text-lg font-bold mb-6 tech-heading flex items-center gap-2 text-blue-600">
