@@ -17,7 +17,7 @@ export function MainSiteFooter() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-4 mb-6 group">
               <div className="relative">
-                <div className="w-16 h-16 bg-tech-gold border-2 border-tech-black flex items-center justify-center shadow-tech-glow group-hover:shadow-tech-red-glow transition-all duration-300">
+                <div className=" flex items-center justify-center">
                   <Image src="/logo.png" alt="Drapeau Français" width={32} height={32} />
                 </div>
               </div>
